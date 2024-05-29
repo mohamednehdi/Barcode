@@ -1,0 +1,17 @@
+<div class="col-md-6 mb-4" *ngIf="uploadedImage">
+    <h3>Uploaded Image:</h3>
+    <img class="uploaded-image" [src]="uploadedImage" alt="Uploaded Image">
+  </div>
+  <div class="col-md-6 mb-4" *ngIf="processedImage">
+    <h3>Processed Image:</h3>
+    <img class="uploaded-image" [src]="processedImage" alt="Processed Image">
+  </div>
+  <div class="col-md-12 mb-4" *ngIf="barcodes.length">
+    <h3>Detected Barcodes:</h3>
+    <ul>
+      <li *ngFor="let barcode of barcodes">
+        {{ barcode.type }}: {{ barcode.data }}
+      </li>
+    </ul>
+  </div>
+  

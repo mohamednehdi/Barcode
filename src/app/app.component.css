@@ -1,0 +1,8 @@
+.container-container {
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .container {
+    max-width: 600px; /* Optional: Restrict max width of content */
+  }
+  

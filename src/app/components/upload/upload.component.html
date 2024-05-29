@@ -1,0 +1,38 @@
+<div class="container-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="upload-header mt-4 p-5 bg-secondary text-white rounded text-center">
+              <h1>Image/PDF upload </h1>
+              <p>On File select with validation for JPEG and PNG only</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 p-4 d-flex justify-content-center text-white">
+        <label for="file-upload" class="custom-file-upload">
+          <i class="fa fa-cloud-upload"></i> Choose File
+        </label>
+        <input id="file-upload" type="file" class="file-input" (change)="onFileSelected($event)">
+      </div>
+      <div class="col-md-6 mb-4" *ngIf="uploadedImage">
+        <h3>Uploaded Image:</h3>
+        <img class="uploaded-image" [src]="uploadedImage" alt="Uploaded Image">
+      </div>
+      <div class="col-md-6 mb-4" *ngIf="processedImage">
+        <h3>Processed Image:</h3>
+        <img class="uploaded-image" [src]="processedImage" alt="Processed Image">
+      </div>
+      <div class="col-md-12 mb-4" *ngIf="barcodes.length">
+        <h3>Detected Barcodes:</h3>
+        <ul>
+          <li *ngFor="let barcode of barcodes">
+            {{ barcode.type }}: {{ barcode.data }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

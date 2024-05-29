@@ -1,0 +1,81 @@
+/* .custom-file-upload {
+  border: 2px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #9FA6B2;
+  border-radius: 5px;
+ 
+} */
+
+
+.custom-file-upload:hover {
+  background-color: #0092d2;
+}
+
+.custom-file-upload i {
+  margin-right: 5px;
+}
+
+.file-input {
+  display: none;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #f6a92b;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 42, 255, 0.2);
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.container-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Adjust this according to your needs */
+  
+}
+
+.container {
+  width: 100%; /* Adjust this according to your needs */
+  
+}
+/* .upload-header {
+  background-color: #b0b2b3;
+} */
+
+.custom-file-upload {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* .upload-header  {
+  position: fixed;
+  top: 1;
+
+} */
+
+
+li {
+  background-color: #f8f9fa;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
