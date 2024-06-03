@@ -11,6 +11,10 @@ import { UploadHeaderComponent } from './upload-header/upload-header.component';
 import { UploadHandlerComponent } from './upload-handler/upload-handler.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { AuthService } from './services/auth.service';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +26,18 @@ import { SignupComponent } from './components/signup/signup.component';
     SignupComponent
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule 
+    
 
 
   ],
   providers: [
-    provideClientHydration(),
+    AuthService,
+    // provideClientHydration(),
     provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
